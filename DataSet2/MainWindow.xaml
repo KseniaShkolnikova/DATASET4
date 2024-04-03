@@ -1,0 +1,27 @@
+﻿<Window x:Class="DataSet2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DataSet2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid RenderTransformOrigin="0.493,0.498" Background="#FFDEFAFF">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="97*"/>
+            <RowDefinition Height="337*"/>
+        </Grid.RowDefinitions>
+        <Frame x:Name="datagrids" Margin="5,5,5,5" Grid.Row="1" NavigationUIVisibility="Hidden"/>
+        <Grid Grid.Row="0" Background="#FFDEFAFF">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Content="СУШИ" Grid.Column="0" Margin="10" FontSize="25px"  Background="#FFBFFBFD" Click="Button_Click_2"/>
+            <Button Content="СУШИ МАГАЗИН" Grid.Column="1" Margin="10" FontSize="30px" Background="#FFDEFAFF"  BorderBrush="#FFDEFAFF" Click="Button_Click" />
+            <Button Content="ИНГРИДИЕНТЫ" Grid.Column="2" FontSize="25px" Margin="10"  Background="#FFBFFBFD" Click="Button_Click_1"/>
+        </Grid>
+
+    </Grid>
+</Window>
